@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.572
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QLBVMB", "QLBVMB\QLBVMB.csproj", "{289E05B8-6DD7-4DCB-8BC4-502F06F17E6F}"
+EndProject
+Project("{840C416C-B8F3-42BC-B0DD-F6BB14C9F8CB}") = "QuanLyBanVeMayBayHasagi", "QuanLyBanVeMayBayHasagi\QuanLyBanVeMayBayHasagi.aiproj", "{303FCD78-DD98-499D-87A2-5A1D15E7F214}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		All|Any CPU = All|Any CPU
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{289E05B8-6DD7-4DCB-8BC4-502F06F17E6F}.All|Any CPU.ActiveCfg = Release|Any CPU
+		{289E05B8-6DD7-4DCB-8BC4-502F06F17E6F}.All|Any CPU.Build.0 = Release|Any CPU
+		{289E05B8-6DD7-4DCB-8BC4-502F06F17E6F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{289E05B8-6DD7-4DCB-8BC4-502F06F17E6F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{289E05B8-6DD7-4DCB-8BC4-502F06F17E6F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{289E05B8-6DD7-4DCB-8BC4-502F06F17E6F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{303FCD78-DD98-499D-87A2-5A1D15E7F214}.All|Any CPU.ActiveCfg = DefaultBuild
+		{303FCD78-DD98-499D-87A2-5A1D15E7F214}.All|Any CPU.Build.0 = DefaultBuild
+		{303FCD78-DD98-499D-87A2-5A1D15E7F214}.Debug|Any CPU.ActiveCfg = DefaultBuild
+		{303FCD78-DD98-499D-87A2-5A1D15E7F214}.Debug|Any CPU.Build.0 = DefaultBuild
+		{303FCD78-DD98-499D-87A2-5A1D15E7F214}.Release|Any CPU.ActiveCfg = DefaultBuild
+		{303FCD78-DD98-499D-87A2-5A1D15E7F214}.Release|Any CPU.Build.0 = DefaultBuild
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {835D4ED3-4F0E-4BF9-B40C-F5B84BAD1026}
+	EndGlobalSection
+EndGlobal
