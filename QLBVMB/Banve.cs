@@ -103,7 +103,7 @@ namespace QLBVMB
             cmd = new SqlCommand("Select * from SANBAY WHERE TINHTRANG=N'Hoạt động'", con);
             da = new SqlDataAdapter();
             da.SelectCommand = cmd;
-
+            
             DataTable table = new DataTable();
             da.Fill(table);
             comboBox_sbdi.DataSource = table;

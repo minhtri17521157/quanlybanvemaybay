@@ -165,7 +165,7 @@
             this.label_time2.BackColor = System.Drawing.Color.Transparent;
             this.label_time2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_time2.ForeColor = System.Drawing.Color.LightCyan;
-            this.label_time2.Location = new System.Drawing.Point(555, 525);
+            this.label_time2.Location = new System.Drawing.Point(568, 525);
             this.label_time2.Name = "label_time2";
             this.label_time2.Size = new System.Drawing.Size(24, 26);
             this.label_time2.TabIndex = 4;
