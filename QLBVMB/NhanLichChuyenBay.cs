@@ -675,14 +675,44 @@ namespace QLBVMB
             comboBox_sbdi_SelectionChangeCommitted(sender, e);
         }
 
-        
+        private void pictureBox_check_Click(object sender, EventArgs e)
+        {
 
+        }
 
+        private void label7_Click(object sender, EventArgs e)
+        {
 
+        }
 
+        private void label6_Click(object sender, EventArgs e)
+        {
 
+        }
 
+        private void label5_Click(object sender, EventArgs e)
+        {
 
+        }
 
+        private void label8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBox_sbden_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dateTimePicker_ngaygio_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

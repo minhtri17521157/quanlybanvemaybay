@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Baocao_Thang));
             this.panel1 = new System.Windows.Forms.Panel();
             this.label_header = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -48,7 +47,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panel1.BackColor = System.Drawing.Color.MintCream;
             this.panel1.Controls.Add(this.label_header);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -59,7 +58,9 @@
             // label_header
             // 
             this.label_header.AutoSize = true;
+            this.label_header.BackColor = System.Drawing.Color.Transparent;
             this.label_header.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_header.ForeColor = System.Drawing.Color.SeaGreen;
             this.label_header.Location = new System.Drawing.Point(87, 10);
             this.label_header.Name = "label_header";
             this.label_header.Size = new System.Drawing.Size(497, 29);
@@ -78,7 +79,7 @@
             // dataGridView_dthu
             // 
             this.dataGridView_dthu.AllowUserToAddRows = false;
-            this.dataGridView_dthu.BackgroundColor = System.Drawing.Color.LemonChiffon;
+            this.dataGridView_dthu.BackgroundColor = System.Drawing.Color.MintCream;
             this.dataGridView_dthu.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView_dthu.Location = new System.Drawing.Point(12, 14);
             this.dataGridView_dthu.Name = "dataGridView_dthu";
@@ -105,7 +106,8 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(483, 76);
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(413, 54);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(69, 20);
             this.label1.TabIndex = 6;
@@ -127,9 +129,9 @@
             this.button_tra_cuu.FlatAppearance.BorderSize = 0;
             this.button_tra_cuu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_tra_cuu.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_tra_cuu.Location = new System.Drawing.Point(481, 18);
+            this.button_tra_cuu.Location = new System.Drawing.Point(373, 49);
             this.button_tra_cuu.Name = "button_tra_cuu";
-            this.button_tra_cuu.Size = new System.Drawing.Size(71, 55);
+            this.button_tra_cuu.Size = new System.Drawing.Size(34, 31);
             this.button_tra_cuu.TabIndex = 4;
             this.button_tra_cuu.UseVisualStyleBackColor = true;
             this.button_tra_cuu.Click += new System.EventHandler(this.button_tra_cuu_Click);
@@ -138,6 +140,7 @@
             // 
             this.label_nam.AutoSize = true;
             this.label_nam.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_nam.ForeColor = System.Drawing.Color.White;
             this.label_nam.Location = new System.Drawing.Point(188, 54);
             this.label_nam.Name = "label_nam";
             this.label_nam.Size = new System.Drawing.Size(50, 20);
@@ -148,6 +151,7 @@
             // 
             this.label_thang.AutoSize = true;
             this.label_thang.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_thang.ForeColor = System.Drawing.Color.White;
             this.label_thang.Location = new System.Drawing.Point(188, 18);
             this.label_thang.Name = "label_thang";
             this.label_thang.Size = new System.Drawing.Size(64, 20);
@@ -180,7 +184,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImage = global::QLBVMB.Properties.Resources.flight;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(661, 562);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);

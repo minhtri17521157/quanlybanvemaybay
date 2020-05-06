@@ -132,7 +132,7 @@
             this.báoCáoDoanhThuThángChuyếnBayToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.báoCáoDoanhThuThángChuyếnBayToolStripMenuItem.Name = "báoCáoDoanhThuThángChuyếnBayToolStripMenuItem";
             this.báoCáoDoanhThuThángChuyếnBayToolStripMenuItem.Size = new System.Drawing.Size(496, 36);
-            this.báoCáoDoanhThuThángChuyếnBayToolStripMenuItem.Text = "Báo Cáo Doanh Thu Tháng Chuyến Bay";
+            this.báoCáoDoanhThuThángChuyếnBayToolStripMenuItem.Text = "Báo Cáo Doanh Thu Tháng";
             this.báoCáoDoanhThuThángChuyếnBayToolStripMenuItem.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.báoCáoDoanhThuThángChuyếnBayToolStripMenuItem.Click += new System.EventHandler(this.báoCáoDoanhThuThángChuyếnBayToolStripMenuItem_Click);
             // 

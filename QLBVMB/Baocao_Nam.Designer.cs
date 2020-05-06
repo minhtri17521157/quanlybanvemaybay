@@ -28,10 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Baocao_Nam));
             this.label_header = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.label_doanhthu_nam = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.textBox_nam = new System.Windows.Forms.TextBox();
@@ -39,8 +40,6 @@
             this.label_nam = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.dataGridView_dthu = new System.Windows.Forms.DataGridView();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -51,17 +50,18 @@
             // 
             this.label_header.AutoSize = true;
             this.label_header.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_header.Location = new System.Drawing.Point(59, 11);
+            this.label_header.Location = new System.Drawing.Point(132, 9);
             this.label_header.Name = "label_header";
-            this.label_header.Size = new System.Drawing.Size(553, 29);
+            this.label_header.Size = new System.Drawing.Size(405, 29);
             this.label_header.TabIndex = 0;
-            this.label_header.Text = "Báo cáo doanh thu năm bán vé các chuyển bay";
+            this.label_header.Text = "Báo Cáo Doanh Thu Năm Bán Vé ";
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.Gold;
+            this.panel1.BackColor = System.Drawing.Color.MintCream;
             this.panel1.Controls.Add(this.label_header);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.ForeColor = System.Drawing.Color.SeaGreen;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(661, 56);
@@ -82,21 +82,45 @@
             this.panel3.Size = new System.Drawing.Size(644, 124);
             this.panel3.TabIndex = 4;
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(340, 39);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(69, 20);
+            this.label3.TabIndex = 9;
+            this.label3.Text = "Tra cứu";
+            // 
+            // label2
+            // 
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(503, 80);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(47, 28);
+            this.label2.TabIndex = 8;
+            this.label2.Text = "VNĐ";
+            // 
             // label_doanhthu_nam
             // 
             this.label_doanhthu_nam.BackColor = System.Drawing.Color.Transparent;
             this.label_doanhthu_nam.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_doanhthu_nam.Location = new System.Drawing.Point(372, 9);
+            this.label_doanhthu_nam.Location = new System.Drawing.Point(301, 72);
             this.label_doanhthu_nam.Name = "label_doanhthu_nam";
             this.label_doanhthu_nam.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label_doanhthu_nam.Size = new System.Drawing.Size(183, 28);
             this.label_doanhthu_nam.TabIndex = 7;
+            this.label_doanhthu_nam.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             // 
             // label1
             // 
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(186, 12);
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(128, 80);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(188, 20);
             this.label1.TabIndex = 6;
@@ -104,7 +128,9 @@
             // 
             // textBox_nam
             // 
-            this.textBox_nam.Location = new System.Drawing.Point(59, 11);
+            this.textBox_nam.BackColor = System.Drawing.Color.MintCream;
+            this.textBox_nam.ForeColor = System.Drawing.Color.Black;
+            this.textBox_nam.Location = new System.Drawing.Point(184, 39);
             this.textBox_nam.MaxLength = 5;
             this.textBox_nam.Name = "textBox_nam";
             this.textBox_nam.Size = new System.Drawing.Size(96, 20);
@@ -118,9 +144,9 @@
             this.button_tra_cuu.FlatAppearance.BorderSize = 0;
             this.button_tra_cuu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_tra_cuu.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_tra_cuu.Location = new System.Drawing.Point(86, 49);
+            this.button_tra_cuu.Location = new System.Drawing.Point(301, 39);
             this.button_tra_cuu.Name = "button_tra_cuu";
-            this.button_tra_cuu.Size = new System.Drawing.Size(69, 36);
+            this.button_tra_cuu.Size = new System.Drawing.Size(33, 23);
             this.button_tra_cuu.TabIndex = 4;
             this.button_tra_cuu.UseVisualStyleBackColor = true;
             this.button_tra_cuu.Click += new System.EventHandler(this.button_tra_cuu_Click);
@@ -129,7 +155,8 @@
             // 
             this.label_nam.AutoSize = true;
             this.label_nam.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_nam.Location = new System.Drawing.Point(8, 12);
+            this.label_nam.ForeColor = System.Drawing.Color.White;
+            this.label_nam.Location = new System.Drawing.Point(128, 37);
             this.label_nam.Name = "label_nam";
             this.label_nam.Size = new System.Drawing.Size(50, 20);
             this.label_nam.TabIndex = 3;
@@ -147,6 +174,7 @@
             // dataGridView_dthu
             // 
             this.dataGridView_dthu.AllowUserToAddRows = false;
+            this.dataGridView_dthu.BackgroundColor = System.Drawing.Color.MintCream;
             this.dataGridView_dthu.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView_dthu.Location = new System.Drawing.Point(18, 17);
             this.dataGridView_dthu.Name = "dataGridView_dthu";
@@ -155,31 +183,11 @@
             this.dataGridView_dthu.Size = new System.Drawing.Size(613, 360);
             this.dataGridView_dthu.TabIndex = 1;
             // 
-            // label2
-            // 
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(561, 8);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(47, 28);
-            this.label2.TabIndex = 8;
-            this.label2.Text = "VNĐ";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(86, 88);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(69, 20);
-            this.label3.TabIndex = 9;
-            this.label3.Text = "Tra cứu";
-            // 
             // Baocao_Nam
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImage = global::QLBVMB.Properties.Resources.flight;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(661, 596);
             this.Controls.Add(this.panel3);
