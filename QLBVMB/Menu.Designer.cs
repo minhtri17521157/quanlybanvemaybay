@@ -209,9 +209,9 @@
             this.button2.FlatAppearance.BorderSize = 0;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.ForeColor = System.Drawing.Color.Transparent;
-            this.button2.Location = new System.Drawing.Point(893, 1);
+            this.button2.Location = new System.Drawing.Point(878, 1);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(63, 55);
+            this.button2.Size = new System.Drawing.Size(51, 46);
             this.button2.TabIndex = 12;
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
@@ -225,9 +225,9 @@
             this.button_mini.FlatAppearance.BorderSize = 0;
             this.button_mini.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_mini.ForeColor = System.Drawing.Color.Transparent;
-            this.button_mini.Location = new System.Drawing.Point(812, 2);
+            this.button_mini.Location = new System.Drawing.Point(821, 2);
             this.button_mini.Name = "button_mini";
-            this.button_mini.Size = new System.Drawing.Size(60, 54);
+            this.button_mini.Size = new System.Drawing.Size(51, 45);
             this.button_mini.TabIndex = 14;
             this.button_mini.UseVisualStyleBackColor = false;
             this.button_mini.Click += new System.EventHandler(this.button_mini_Click);

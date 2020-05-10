@@ -191,7 +191,7 @@ namespace QLBVMB
             //string _
 
             //graphic.DrawString(" SH Restaurants", new Font("Courier New", 18), new SolidBrush(Color.Black), startX, startY);
-            e.Graphics.DrawString("Đại lý vé máy bay HASAGI", new Font("Times New Roman", 34, FontStyle.Underline), new SolidBrush(Color.Black), new Point(200, 80));
+            e.Graphics.DrawString("Đại lý vé máy bay ", new Font("Times New Roman", 34, FontStyle.Underline), new SolidBrush(Color.Black), new Point(200, 80));
             e.Graphics.DrawString("~Dont just fly, SOAR!~", new Font("Segoe Print", 15, FontStyle.Italic), new SolidBrush(Color.Black), new Point(325, 140)); 
             e.Graphics.DrawString("----------------------------------------", new Font("Times New Roman", 30, FontStyle.Regular), new SolidBrush(Color.Black), new Point(160, 180));
             e.Graphics.DrawString("Vé máy bay", new Font("Times New Roman", 27, FontStyle.Bold), new SolidBrush(Color.Black), new Point(350, 220));
