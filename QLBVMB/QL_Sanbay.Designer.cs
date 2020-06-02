@@ -47,6 +47,7 @@
             // dataGridView_Sanbay
             // 
             this.dataGridView_Sanbay.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView_Sanbay.BackgroundColor = System.Drawing.Color.MintCream;
             this.dataGridView_Sanbay.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView_Sanbay.Location = new System.Drawing.Point(12, 262);
             this.dataGridView_Sanbay.Name = "dataGridView_Sanbay";
@@ -139,8 +140,9 @@
             // 
             // label_realslcanxoa
             // 
-            this.label_realslcanxoa.BackColor = System.Drawing.Color.Salmon;
+            this.label_realslcanxoa.BackColor = System.Drawing.Color.LightCoral;
             this.label_realslcanxoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_realslcanxoa.ForeColor = System.Drawing.Color.White;
             this.label_realslcanxoa.Location = new System.Drawing.Point(383, 141);
             this.label_realslcanxoa.Name = "label_realslcanxoa";
             this.label_realslcanxoa.Size = new System.Drawing.Size(66, 24);

@@ -160,6 +160,7 @@
             // dataGridView_hangve
             // 
             this.dataGridView_hangve.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView_hangve.BackgroundColor = System.Drawing.Color.MintCream;
             this.dataGridView_hangve.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView_hangve.Location = new System.Drawing.Point(34, 301);
             this.dataGridView_hangve.Name = "dataGridView_hangve";

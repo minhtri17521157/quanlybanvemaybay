@@ -714,5 +714,20 @@ namespace QLBVMB
         {
 
         }
+
+        private void groupBox2_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label_note_tgbay_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dateTimePicker_ngaygio_ValueChanged_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }

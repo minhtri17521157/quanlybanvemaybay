@@ -49,16 +49,18 @@
             // label_header
             // 
             this.label_header.AutoSize = true;
-            this.label_header.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_header.Location = new System.Drawing.Point(132, 9);
+            this.label_header.Font = new System.Drawing.Font("Microsoft Sans Serif", 21F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_header.ForeColor = System.Drawing.Color.Black;
+            this.label_header.Location = new System.Drawing.Point(102, 9);
             this.label_header.Name = "label_header";
-            this.label_header.Size = new System.Drawing.Size(405, 29);
+            this.label_header.Size = new System.Drawing.Size(474, 32);
             this.label_header.TabIndex = 0;
             this.label_header.Text = "Báo Cáo Doanh Thu Năm Bán Vé ";
+            this.label_header.Click += new System.EventHandler(this.label_header_Click);
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.MintCream;
+            this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.Controls.Add(this.label_header);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.ForeColor = System.Drawing.Color.SeaGreen;

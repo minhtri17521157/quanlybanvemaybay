@@ -84,7 +84,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.MintCream;
+            this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -96,11 +96,11 @@
             // 
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.SeaGreen;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(352, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(131, 29);
+            this.label1.Size = new System.Drawing.Size(152, 32);
             this.label1.TabIndex = 0;
             this.label1.Text = "HÓA ĐƠN";
             // 
@@ -125,8 +125,8 @@
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.ForeColor = System.Drawing.Color.Honeydew;
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.ForeColor = System.Drawing.Color.Black;
             this.groupBox1.Location = new System.Drawing.Point(12, 160);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(383, 133);
@@ -137,6 +137,7 @@
             // label_SDT
             // 
             this.label_SDT.BackColor = System.Drawing.Color.White;
+            this.label_SDT.ForeColor = System.Drawing.Color.Black;
             this.label_SDT.Location = new System.Drawing.Point(151, 102);
             this.label_SDT.Name = "label_SDT";
             this.label_SDT.Size = new System.Drawing.Size(157, 20);
@@ -145,6 +146,7 @@
             // label_CMND
             // 
             this.label_CMND.BackColor = System.Drawing.Color.White;
+            this.label_CMND.ForeColor = System.Drawing.Color.Black;
             this.label_CMND.Location = new System.Drawing.Point(151, 69);
             this.label_CMND.Name = "label_CMND";
             this.label_CMND.Size = new System.Drawing.Size(157, 20);
@@ -153,6 +155,7 @@
             // label_tenKH
             // 
             this.label_tenKH.BackColor = System.Drawing.Color.White;
+            this.label_tenKH.ForeColor = System.Drawing.Color.Black;
             this.label_tenKH.Location = new System.Drawing.Point(151, 32);
             this.label_tenKH.Name = "label_tenKH";
             this.label_tenKH.Size = new System.Drawing.Size(157, 20);
@@ -213,8 +216,8 @@
             this.groupBox2.Controls.Add(this.label6);
             this.groupBox2.Controls.Add(this.label7);
             this.groupBox2.Controls.Add(this.label8);
-            this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.ForeColor = System.Drawing.Color.Honeydew;
+            this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox2.ForeColor = System.Drawing.Color.Black;
             this.groupBox2.Location = new System.Drawing.Point(401, 55);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(400, 421);
@@ -228,13 +231,14 @@
             this.label20.ForeColor = System.Drawing.Color.White;
             this.label20.Location = new System.Drawing.Point(350, 367);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(43, 20);
+            this.label20.Size = new System.Drawing.Size(42, 18);
             this.label20.TabIndex = 18;
             this.label20.Text = "VNĐ";
             // 
             // label_tgBay
             // 
             this.label_tgBay.BackColor = System.Drawing.Color.White;
+            this.label_tgBay.ForeColor = System.Drawing.Color.Black;
             this.label_tgBay.Location = new System.Drawing.Point(193, 290);
             this.label_tgBay.Name = "label_tgBay";
             this.label_tgBay.Size = new System.Drawing.Size(157, 20);
@@ -243,6 +247,7 @@
             // label1_tgKH
             // 
             this.label1_tgKH.BackColor = System.Drawing.Color.White;
+            this.label1_tgKH.ForeColor = System.Drawing.Color.Black;
             this.label1_tgKH.Location = new System.Drawing.Point(193, 250);
             this.label1_tgKH.Name = "label1_tgKH";
             this.label1_tgKH.Size = new System.Drawing.Size(157, 20);
@@ -251,6 +256,7 @@
             // label_gia
             // 
             this.label_gia.BackColor = System.Drawing.Color.White;
+            this.label_gia.ForeColor = System.Drawing.Color.Black;
             this.label_gia.Location = new System.Drawing.Point(193, 367);
             this.label_gia.Name = "label_gia";
             this.label_gia.Size = new System.Drawing.Size(157, 20);
@@ -259,6 +265,7 @@
             // label_tenHV
             // 
             this.label_tenHV.BackColor = System.Drawing.Color.White;
+            this.label_tenHV.ForeColor = System.Drawing.Color.Black;
             this.label_tenHV.Location = new System.Drawing.Point(193, 329);
             this.label_tenHV.Name = "label_tenHV";
             this.label_tenHV.Size = new System.Drawing.Size(157, 20);
@@ -267,6 +274,7 @@
             // label_sbDen
             // 
             this.label_sbDen.BackColor = System.Drawing.Color.White;
+            this.label_sbDen.ForeColor = System.Drawing.Color.Black;
             this.label_sbDen.Location = new System.Drawing.Point(193, 207);
             this.label_sbDen.Name = "label_sbDen";
             this.label_sbDen.Size = new System.Drawing.Size(157, 20);
@@ -275,6 +283,7 @@
             // label_sbDi
             // 
             this.label_sbDi.BackColor = System.Drawing.Color.White;
+            this.label_sbDi.ForeColor = System.Drawing.Color.Black;
             this.label_sbDi.Location = new System.Drawing.Point(193, 167);
             this.label_sbDi.Name = "label_sbDi";
             this.label_sbDi.Size = new System.Drawing.Size(157, 20);
@@ -283,6 +292,7 @@
             // label_maTB
             // 
             this.label_maTB.BackColor = System.Drawing.Color.White;
+            this.label_maTB.ForeColor = System.Drawing.Color.Black;
             this.label_maTB.Location = new System.Drawing.Point(193, 127);
             this.label_maTB.Name = "label_maTB";
             this.label_maTB.Size = new System.Drawing.Size(157, 20);
@@ -291,6 +301,7 @@
             // label_maCB
             // 
             this.label_maCB.BackColor = System.Drawing.Color.White;
+            this.label_maCB.ForeColor = System.Drawing.Color.Black;
             this.label_maCB.Location = new System.Drawing.Point(193, 89);
             this.label_maCB.Name = "label_maCB";
             this.label_maCB.Size = new System.Drawing.Size(157, 20);
@@ -299,6 +310,7 @@
             // label_maVe
             // 
             this.label_maVe.BackColor = System.Drawing.Color.White;
+            this.label_maVe.ForeColor = System.Drawing.Color.Black;
             this.label_maVe.Location = new System.Drawing.Point(193, 52);
             this.label_maVe.Name = "label_maVe";
             this.label_maVe.Size = new System.Drawing.Size(157, 20);
@@ -427,6 +439,7 @@
             // label_ngayhuy
             // 
             this.label_ngayhuy.BackColor = System.Drawing.SystemColors.Control;
+            this.label_ngayhuy.ForeColor = System.Drawing.Color.Black;
             this.label_ngayhuy.Location = new System.Drawing.Point(151, 138);
             this.label_ngayhuy.Name = "label_ngayhuy";
             this.label_ngayhuy.Size = new System.Drawing.Size(157, 20);
@@ -445,6 +458,7 @@
             // label_nggd
             // 
             this.label_nggd.BackColor = System.Drawing.Color.White;
+            this.label_nggd.ForeColor = System.Drawing.Color.Black;
             this.label_nggd.Location = new System.Drawing.Point(151, 102);
             this.label_nggd.Name = "label_nggd";
             this.label_nggd.Size = new System.Drawing.Size(157, 20);
@@ -453,6 +467,7 @@
             // label_dadong
             // 
             this.label_dadong.BackColor = System.Drawing.Color.White;
+            this.label_dadong.ForeColor = System.Drawing.Color.Black;
             this.label_dadong.Location = new System.Drawing.Point(151, 69);
             this.label_dadong.Name = "label_dadong";
             this.label_dadong.Size = new System.Drawing.Size(157, 20);
@@ -461,6 +476,7 @@
             // label_stt
             // 
             this.label_stt.BackColor = System.Drawing.Color.White;
+            this.label_stt.ForeColor = System.Drawing.Color.Black;
             this.label_stt.Location = new System.Drawing.Point(151, 32);
             this.label_stt.Name = "label_stt";
             this.label_stt.Size = new System.Drawing.Size(157, 20);
@@ -516,8 +532,8 @@
             this.groupBox5.Controls.Add(this.button_huy);
             this.groupBox5.Controls.Add(this.button2);
             this.groupBox5.Controls.Add(this.button_thanhtoan);
-            this.groupBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox5.ForeColor = System.Drawing.Color.Honeydew;
+            this.groupBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox5.ForeColor = System.Drawing.Color.Black;
             this.groupBox5.Location = new System.Drawing.Point(12, 482);
             this.groupBox5.Name = "groupBox5";
             this.groupBox5.Size = new System.Drawing.Size(789, 98);

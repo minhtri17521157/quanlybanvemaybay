@@ -47,7 +47,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.MintCream;
+            this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.Controls.Add(this.label_header);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -59,11 +59,11 @@
             // 
             this.label_header.AutoSize = true;
             this.label_header.BackColor = System.Drawing.Color.Transparent;
-            this.label_header.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_header.ForeColor = System.Drawing.Color.SeaGreen;
-            this.label_header.Location = new System.Drawing.Point(87, 10);
+            this.label_header.Font = new System.Drawing.Font("Microsoft Sans Serif", 21F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_header.ForeColor = System.Drawing.Color.Black;
+            this.label_header.Location = new System.Drawing.Point(47, 10);
             this.label_header.Name = "label_header";
-            this.label_header.Size = new System.Drawing.Size(497, 29);
+            this.label_header.Size = new System.Drawing.Size(587, 32);
             this.label_header.TabIndex = 0;
             this.label_header.Text = "Báo cáo doanh thu bán vé các chuyển bay";
             // 

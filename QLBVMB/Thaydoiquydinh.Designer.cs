@@ -60,7 +60,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.HotPink;
+            this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -71,7 +71,7 @@
             // label1
             // 
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(162, 6);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(278, 39);
@@ -298,9 +298,9 @@
             // 
             // label_slhv
             // 
-            this.label_slhv.BackColor = System.Drawing.Color.HotPink;
+            this.label_slhv.BackColor = System.Drawing.Color.LightCoral;
             this.label_slhv.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_slhv.ForeColor = System.Drawing.Color.Black;
+            this.label_slhv.ForeColor = System.Drawing.Color.White;
             this.label_slhv.Location = new System.Drawing.Point(256, 96);
             this.label_slhv.Name = "label_slhv";
             this.label_slhv.Size = new System.Drawing.Size(43, 20);
@@ -309,9 +309,9 @@
             // 
             // label_sbtd
             // 
-            this.label_sbtd.BackColor = System.Drawing.Color.HotPink;
+            this.label_sbtd.BackColor = System.Drawing.Color.LightCoral;
             this.label_sbtd.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_sbtd.ForeColor = System.Drawing.Color.Black;
+            this.label_sbtd.ForeColor = System.Drawing.Color.White;
             this.label_sbtd.Location = new System.Drawing.Point(256, 40);
             this.label_sbtd.Name = "label_sbtd";
             this.label_sbtd.Size = new System.Drawing.Size(43, 20);
@@ -333,12 +333,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImage = global::QLBVMB.Properties.Resources.flight;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(611, 621);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.panel1);
+            this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "Thaydoiquydinh";
             this.Text = "Thay đổi quy định";

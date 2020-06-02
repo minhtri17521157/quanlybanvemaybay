@@ -52,6 +52,11 @@ namespace QLBVMB
             String.Format("{0:n0}", label_doanhthu_nam.Text);
         }
 
+        private void label_header_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void button_tra_cuu_Click(object sender, EventArgs e)
         {
 
