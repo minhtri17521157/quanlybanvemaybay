@@ -375,7 +375,7 @@ namespace QLBVMB
         private string GetMAVE(string makhachhang, string machuyenbay, string mahangve)
         {
             BLL.VechuyenbayBLL busVeChuyenbay = new BLL.VechuyenbayBLL();
-            string mave = "123";
+            //string mave = "123";
             DataTable dtVecb = busVeChuyenbay.FindMAVE(makhachhang, machuyenbay, mahangve);
             foreach (DataRow row in dtVecb.Rows)
             {
@@ -388,7 +388,7 @@ namespace QLBVMB
         private string GetMAHK(string cmnd)
         {
             BLL.HanhkhachBLL busHanhkhach = new BLL.HanhkhachBLL();
-            string mahk = "123";
+            //string mahk = "123";
             DataTable dtHanhkhach = busHanhkhach.FindMAHK(cmnd);
             foreach (DataRow row in dtHanhkhach.Rows)
             {
