@@ -484,7 +484,7 @@ namespace QLBVMB
                 return;
 
             }
-            if (Convert.ToDateTime(dateTimePicker_ngaygio.Text)<=DateTime.Now)
+            if (Convert.ToDateTime(dateTimePicker_ngaygio.Text, System.Globalization.CultureInfo.GetCultureInfo("hi-IN").DateTimeFormat) <=DateTime.Now)
             {
                 MessageBox.Show("Ngày khởi hành phải sau ngày giờ hiện tại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
@@ -515,7 +515,7 @@ namespace QLBVMB
             }
             // Check END
 
-            dtoChuyenBay = new DTO.Chuyenbay(textBox_macb.Text, Get_maTB_by_maSB(comboBox_sbdi.SelectedValue.ToString(),comboBox_sbden.SelectedValue.ToString()), Convert.ToDateTime(dateTimePicker_ngaygio.Text), float.Parse(textBox_thoigianbay.Text), comboBox_giave.SelectedValue.ToString());
+            dtoChuyenBay = new DTO.Chuyenbay(textBox_macb.Text, Get_maTB_by_maSB(comboBox_sbdi.SelectedValue.ToString(),comboBox_sbden.SelectedValue.ToString()), Convert.ToDateTime(dateTimePicker_ngaygio.Text, System.Globalization.CultureInfo.GetCultureInfo("hi-IN").DateTimeFormat), float.Parse(textBox_thoigianbay.Text), comboBox_giave.SelectedValue.ToString());
             if (busChuyenbay.InsertChuyenbay(dtoChuyenBay))
             {
                 //MessageBox.Show("Nhận lịch chuyến bay B1 thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -615,7 +615,7 @@ namespace QLBVMB
 
                     pictureBox_check.Image = Properties.Resources.okay;
                     pictureBox_check.Visible = true;
-                    label_tuyenbay_khadung.ForeColor = Color.Black;
+                    label_tuyenbay_khadung.ForeColor = Color.White;
                     label_tuyenbay_khadung.Text = "Tồn tại tuyến bay giữa hai sân bay trên";
                 }
                 else
@@ -726,6 +726,11 @@ namespace QLBVMB
         }
 
         private void dateTimePicker_ngaygio_ValueChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label_tuyenbay_khadung_Click(object sender, EventArgs e)
         {
 
         }

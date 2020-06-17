@@ -646,6 +646,7 @@
             this.label_tuyenbay_khadung.Name = "label_tuyenbay_khadung";
             this.label_tuyenbay_khadung.Size = new System.Drawing.Size(259, 25);
             this.label_tuyenbay_khadung.TabIndex = 35;
+            this.label_tuyenbay_khadung.Click += new System.EventHandler(this.label_tuyenbay_khadung_Click);
             // 
             // pictureBox_check
             // 

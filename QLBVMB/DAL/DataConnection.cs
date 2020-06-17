@@ -13,8 +13,10 @@ namespace QLBVMB
         public DataConnection()
         {
             // conStr = @"Data Source =.\SQLEXPRESS; Initial Catalog=SELL_PLANE_TICKET_DATABASE; Integrated Security=True";DESKTOP-N6VGHVB\SQLEXPRESS SELL_PLANE_TICKET_DATABASE
-            conStr = @"Data Source=.\SQLEXPRESS;AttachDbFilename=|DataDirectory|\SELL_PLANE_TICKET_DATABASE.mdf;Integrated Security=True;Connect Timeout=30;User Instance=True";
-            //conStr = @"Data Source=DESKTOP-N6VGHVB\SQLEXPRESS;AttachDbFilename=|DataDirectory|\SELL_PLANE_TICKET_DATABASE.mdf;Integrated Security=True;Connect Timeout=30;User Instance=True";
+            //conStr = @"Data Source=.\SQLEXPRESS;AttachDbFilename=|DataDirectory|\SELL_PLANE_TICKET_DATABASE.mdf;Integrated Security=True;Connect Timeout=60;User Instance=True";
+            //DESKTOP-N6VGHVB\SQLEXPRESS
+            conStr = @"Data Source=DESKTOP-N6VGHVB\SQLEXPRESS;Initial Catalog=SELL_PLANE_TICKET_DATABASE;Integrated Security=True";
+
         }
         public SqlConnection GetConnect()
         {

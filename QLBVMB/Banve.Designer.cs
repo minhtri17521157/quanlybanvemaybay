@@ -222,6 +222,7 @@
             this.dataGridView_tracuu.TabIndex = 7;
             this.dataGridView_tracuu.DataSourceChanged += new System.EventHandler(this.dataGridView_tracuu_DataSourceChanged);
             this.dataGridView_tracuu.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_tracuu_CellClick);
+            this.dataGridView_tracuu.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_tracuu_CellContentClick);
             // 
             // comboBox_hv
             // 

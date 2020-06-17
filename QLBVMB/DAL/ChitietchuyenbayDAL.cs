@@ -79,18 +79,18 @@ namespace QLBVMB.DAL
         public bool InsertCTChuyenBay(DTO.Chitietchuyenbay CTCB)
         {
             string sql = "INSERT INTO CTCHUYENBAY(MACTCB, MACB, MASANBAYTG,THOIGIANDUNG,GHICHU) VALUES(@MACTCB, @MACB, @MASANBAYTG,@THOIGIANDUNG,@GHICHU)";
-            //string sql2 = "INSERT INTO CTCHUYENBAY(MACTCB, MACB, MASANBAYTG,THOIGIANDUNG,GHICHU) VALUES('MACTCB0003', 'CB0009', 'SB0006',16,'khong')";
+            //string sql = "INSERT INTO CTCHUYENBAY(MACTCB, MACB, MASANBAYTG,THOIGIANDUNG,GHICHU) VALUES('MACTCB00012', 'CB00012', 'SB0006',16,'khong')";
 
             SqlConnection con = dc.GetConnect();
             try
             {
                 cmd = new SqlCommand(sql, con);
                 con.Open();
-                cmd.Parameters.Add("@MACTCB", SqlDbType.VarChar).Value = TaoMa_CT_CB();
-                cmd.Parameters.Add("@MACB", SqlDbType.VarChar).Value = CTCB.macb;
-                cmd.Parameters.Add("@MASANBAYTG", SqlDbType.VarChar).Value = CTCB.masbtg;
-                cmd.Parameters.Add("@THOIGIANDUNG", SqlDbType.Float).Value = CTCB.thoigiandung;
-                cmd.Parameters.Add("@GHICHU", SqlDbType.NVarChar).Value = CTCB.ghichu;
+                cmd.Parameters.Add(new SqlParameter("@MACTCB", SqlDbType.VarChar).Value = TaoMa_CT_CB());
+                cmd.Parameters.Add(new SqlParameter("@MACB", SqlDbType.VarChar).Value = CTCB.macb);
+                cmd.Parameters.Add(new SqlParameter("@MASANBAYTG", SqlDbType.VarChar).Value = CTCB.masbtg);
+                cmd.Parameters.Add(new SqlParameter("@THOIGIANDUNG", SqlDbType.Float).Value = CTCB.thoigiandung);
+                cmd.Parameters.Add(new SqlParameter("@GHICHU", SqlDbType.NVarChar).Value = CTCB.ghichu);
 
                 cmd.ExecuteNonQuery();
                 con.Close();

@@ -178,16 +178,33 @@ namespace QLBVMB.DAL
         {
 
 
-            string sqlQuery = string.Format("Set dateformat dmy SELECT C.MACB[Mã chuyến bay], " +
-                "C.MATB[Mã tuyến bay], C.NGAYGIO[Thời gian KH], C.THOIGIANBAY[Thời gian bay (phút)], HV.TENHV[Tên hạng vé], TV.SLGHETRONG[Số lượng ghế trống],TV.SLGHEDAT[Số lượng ghế đặt] " +
-              " FROM CHUYENBAY C INNER JOIN TUYENBAY T " +
-                "ON C.MATB=T.MATB INNER JOIN TINHTRANGVE TV ON C.MACB=TV.MACB INNER JOIN HANGVE HV ON TV.MAHV=HV.MAHV WHERE T.MASBDI = '{0}' " +
-                "AND T.MASBDEN ='{1}' AND C.NGAYGIO BETWEEN('{2}') AND ('{3}')", maSanBayDi, maSanBayDen, thoiGian, thoiGian2); //
+            //string sqlQuery = string.Format("Set dateformat dmy SELECT C.MACB[Mã chuyến bay]," +
+            //  "C.MATB[Mã tuyến bay], " +
+            //  "C.NGAYGIO[Thời gian KH]," +
+            //  " C.THOIGIANBAY[Thời gian bay (phút)], " +
+            //  "HV.TENHV[Tên hạng vé]," +
+            //  " TV.SLGHETRONG[Số lượng ghế trống]," +
+            //  "TV.SLGHEDAT[Số lượng ghế đặt] " +
+            //  " FROM CHUYENBAY C INNER JOIN TUYENBAY T ON C.MATB=T.MATB " +
+            //  "INNER JOIN TINHTRANGVE TV ON C.MACB=TV.MACB " +
+            //  "INNER JOIN HANGVE HV ON TV.MAHV=HV.MAHV" +
+            //  " WHERE T.MASBDI ="+ maSanBayDi  +
+            // "AND T.MASBDEN ="+ maSanBayDen +
+            // "AND C.NGAYGIO BETWEEN('"+ thoiGian +"') AND ('"+ thoiGian2 +"')"); 
 
 
-            
-            // string sqlQuery = "Set dateformat dmy SELECT C.MACB[Mã chuyến bay],C.MATB[Mã tuyến bay],C.NGAYGIO[Thời gian KH], C.THOIGIANBAY[Thời gian bay(phút)], HV.TENHV ,TV.SLGHETRONG[Số lượng ghế trống],TV.SLGHEDAT[Sl ghedat] FROM CHUYENBAY C INNER JOIN TUYENBAY T ON C.MATB = T.MATB INNER JOIN TINHTRANGVE TV ON C.MACB = TV.MACB INNER JOIN HANGVE HV ON TV.MAHV = HV.MAHV WHERE T.MASBDI = 'SB0001' AND T.MASBDEN = 'SB0002' AND C.NGAYGIO BETWEEN('1/1/2018') AND('1/1/2019') ";
-
+            //Convert.ToDateTime(thoiGian.Text, System.Globalization.CultureInfo.GetCultureInfo("hi-IN").DateTimeFormat)
+            //string sqlQuery = "Set dateformat dmy SELECT C.MACB[Mã chuyến bay],C.MATB[Mã tuyến bay],C.NGAYGIO[Thời gian KH], C.THOIGIANBAY[Thời gian bay(phút)], HV.TENHV ,TV.SLGHETRONG[Số lượng ghế trống],TV.SLGHEDAT[Sl ghedat] FROM CHUYENBAY C INNER JOIN TUYENBAY T ON C.MATB = T.MATB INNER JOIN TINHTRANGVE TV ON C.MACB = TV.MACB INNER JOIN HANGVE HV ON TV.MAHV = HV.MAHV WHERE T.MASBDI = '"+maSanBayDi+ "' AND T.MASBDEN = '" + maSanBayDen + "'AND C.NGAYGIO BETWEEN('"+ Convert.ToDateTime(thoiGian, System.Globalization.CultureInfo.GetCultureInfo("hi-IN").DateTimeFormat).ToString() + "') AND('"+ Convert.ToDateTime(thoiGian2, System.Globalization.CultureInfo.GetCultureInfo("hi-IN").DateTimeFormat).ToString()+"') ";
+            string d = thoiGian.Day.ToString();
+            string m = thoiGian.Month.ToString();
+            string y = thoiGian.Year.ToString();
+            string d2 = thoiGian2.Day.ToString();
+            string m2 = thoiGian2.Month.ToString();
+            string y2 = thoiGian2.Year.ToString();
+            string searchtg = d +"/"+ m + "/" + y;
+            string searchtg2 = d2 + "/" + m2 + "/" + y2;
+            //string sqlQuery = "Set dateformat dmy SELECT C.MACB[Mã chuyến bay],C.MATB[Mã tuyến bay],C.NGAYGIO[Thời gian KH], C.THOIGIANBAY[Thời gian bay(phút)], HV.TENHV ,TV.SLGHETRONG[Số lượng ghế trống],TV.SLGHEDAT[Sl ghedat] FROM CHUYENBAY C INNER JOIN TUYENBAY T ON C.MATB = T.MATB INNER JOIN TINHTRANGVE TV ON C.MACB = TV.MACB INNER JOIN HANGVE HV ON TV.MAHV = HV.MAHV WHERE T.MASBDI = '" + maSanBayDi + "' AND T.MASBDEN = '" + maSanBayDen + "'AND C.NGAYGIO BETWEEN('"+searchtg+"') AND('" + searchtg2+ "') ";
+            string sqlQuery = "Set dateformat dmy SELECT C.MACB[Mã chuyến bay],C.MATB[Mã tuyến bay],C.NGAYGIO[Thời gian KH], C.THOIGIANBAY[Thời gian bay(phút)], HV.TENHV ,TV.SLGHETRONG[Số lượng ghế trống],TV.SLGHEDAT[Sl ghedat] FROM CHUYENBAY C INNER JOIN TUYENBAY T ON C.MATB = T.MATB INNER JOIN TINHTRANGVE TV ON C.MACB = TV.MACB INNER JOIN HANGVE HV ON TV.MAHV = HV.MAHV WHERE T.MASBDI = '" + maSanBayDi + "' AND T.MASBDEN = '" + maSanBayDen + "'AND C.NGAYGIO BETWEEN('"+searchtg+ "') AND('" + searchtg2 + "') ";
 
             SqlConnection con = dc.GetConnect();
             //B3: khởi tạo đối tượng của lớp sql data adapter

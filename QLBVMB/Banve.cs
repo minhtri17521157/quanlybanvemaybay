@@ -177,6 +177,7 @@ namespace QLBVMB
 
         private void button_Timkiem_Click(object sender, EventArgs e)
         {
+            
 
             if (comboBox_sbdi.Text == comboBox_sbden.Text)
             {
@@ -195,7 +196,14 @@ namespace QLBVMB
                     DateTime ngayKH2 = dateTimePicker_thoigian2.Value;
                     string tmp = dateTimePicker_thoigian1.Value.ToShortDateString();
 
-                    TaoBangDSChuyenBayTheoYeuCau(maSanBayDi, maSanBayDen, ngayKH, ngayKH2, tmp);
+                    string d = ngayKH.Day.ToString();
+                    string m = ngayKH.Month.ToString();
+                    string y = ngayKH.Year.ToString();
+
+                    string searchtg = m + "/" + d + "/" + y;
+
+                    MessageBox.Show(searchtg, "", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    TaoBangDSChuyenBayTheoYeuCau(maSanBayDi, maSanBayDen, ngayKH.Date, ngayKH2.Date, tmp);
                 }
                 catch (Exception a)
                 {
@@ -210,7 +218,7 @@ namespace QLBVMB
             }
             else
             {
-                //MessageBox.Show("Vui lòng nhập đầy đủ thông tin!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Vui lòng nhập đầy đủ thông tin!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
             }
 
@@ -663,6 +671,11 @@ namespace QLBVMB
                 //comboBox_sbden. = 1;
                 //comboBox_sbdi.SelectedValue = 2;
             }
+        }
+
+        private void dataGridView_tracuu_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }
