@@ -558,6 +558,7 @@
             this.comboBox_sbden.Name = "comboBox_sbden";
             this.comboBox_sbden.Size = new System.Drawing.Size(207, 28);
             this.comboBox_sbden.TabIndex = 17;
+            this.comboBox_sbden.SelectedIndexChanged += new System.EventHandler(this.comboBox_sbden_SelectedIndexChanged_1);
             this.comboBox_sbden.SelectionChangeCommitted += new System.EventHandler(this.comboBox_sbden_SelectionChangeCommitted);
             // 
             // dateTimePicker_ngaygio

@@ -652,7 +652,7 @@ namespace QLBVMB
 
                     pictureBox_check.Image = Properties.Resources.okay;
                     pictureBox_check.Visible = true;
-                    label_tuyenbay_khadung.ForeColor = Color.Black;
+                    label_tuyenbay_khadung.ForeColor = Color.White;
                     label_tuyenbay_khadung.Text = "Tồn tại tuyến bay giữa hai sân bay trên";
                 }
                 else
@@ -731,6 +731,11 @@ namespace QLBVMB
         }
 
         private void label_tuyenbay_khadung_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBox_sbden_SelectedIndexChanged_1(object sender, EventArgs e)
         {
 
         }

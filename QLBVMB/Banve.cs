@@ -202,7 +202,7 @@ namespace QLBVMB
 
                     string searchtg = m + "/" + d + "/" + y;
 
-                    MessageBox.Show(searchtg, "", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    //MessageBox.Show(searchtg, "", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     TaoBangDSChuyenBayTheoYeuCau(maSanBayDi, maSanBayDen, ngayKH.Date, ngayKH2.Date, tmp);
                 }
                 catch (Exception a)

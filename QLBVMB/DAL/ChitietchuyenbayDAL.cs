@@ -79,7 +79,7 @@ namespace QLBVMB.DAL
         public bool InsertCTChuyenBay(DTO.Chitietchuyenbay CTCB)
         {
             string sql = "INSERT INTO CTCHUYENBAY(MACTCB, MACB, MASANBAYTG,THOIGIANDUNG,GHICHU) VALUES(@MACTCB, @MACB, @MASANBAYTG,@THOIGIANDUNG,@GHICHU)";
-            //string sql = "INSERT INTO CTCHUYENBAY(MACTCB, MACB, MASANBAYTG,THOIGIANDUNG,GHICHU) VALUES('MACTCB00012', 'CB00012', 'SB0006',16,'khong')";
+            //string sql = "INSERT INTO CTCHUYENBAY(MACTCB, MACB, MASANBAYTG,THOIGIANDUNG,GHICHU) VALUES('MACTCB00012test', 'CB111', 'SB0006',16,'khong')";
 
             SqlConnection con = dc.GetConnect();
             try

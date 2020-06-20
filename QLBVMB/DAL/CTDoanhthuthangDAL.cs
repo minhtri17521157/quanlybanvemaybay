@@ -43,7 +43,7 @@ namespace QLBVMB.DAL
 
             string sql = string.Format("SELECT ROW_NUMBER() OVER (ORDER BY tbl.[Chuyến bay]) AS [STT],tbl.* " +
                 "FROM (SELECT DISTINCT  CT.MACHUYENBAY[Chuyến bay],CT.SOVEBANDUOC[Số vé bán được],CT.DOANHTHU[Doanh thu (VNĐ)]  " +
-                "FROM CTDOANHTHUTHANG CT, VECHUYENBAY V where CT.MACHUYENBAY=V.MACB and MONTH(V.NGAYGD)='{0}' AND YEAR(V.NGAYGD)='{1}' AND V.LOAIVE=N'Vé mua') tbl", strThang, strNam);
+                "FROM CTDOANHTHUTHANG CT, VECHUYENBAY V where CT.MACHUYENBAY=V.MACB and MONTH(V.NGAYGD)='"+strThang+"' AND YEAR(V.NGAYGD)='"+strNam+"' AND V.LOAIVE=N'Vé mua') tbl");
 
             SqlDataAdapter da = new SqlDataAdapter(sql, _con);
             DataTable dt = new DataTable();
@@ -60,7 +60,7 @@ namespace QLBVMB.DAL
             try
             {
                 _con.Open();
-                string sqlQuery = string.Format("INSERT INTO CTDOANHTHUTHANG(THANG, MACHUYENBAY, SOVEBANDUOC, DOANHTHU) VALUES('{0}', '{1}', '{2}', '{3}')", dto.thang, dto.machuyenbay, dto.sovebanduoc, dto.doanhthu);
+                string sqlQuery = string.Format("INSERT INTO CTDOANHTHUTHANG(THANG, MACHUYENBAY, SOVEBANDUOC, DOANHTHU) VALUES('"+ dto.thang + "', '"+ dto.machuyenbay + "', '"+ dto.sovebanduoc + "', '"+ dto.doanhthu + "')");
                 SqlCommand cmd = new SqlCommand(sqlQuery, _con);
                 if (cmd.ExecuteNonQuery() > 0)
                     return true;
